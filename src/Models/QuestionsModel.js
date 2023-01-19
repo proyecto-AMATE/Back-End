@@ -8,13 +8,17 @@ const myschema = new Schema({
         'type': String,
         'required': true
     },
-    'category_id':{
-        'type': Object
+    'category':{
+        'type': String,
+        'required': true
     },
-    'date': Date,
+    'clue':{
+        'type':String,
+        'required':true
+    }
 });
 
 //Creating the model based on the questions schema
-const model = mongoose.model('Question', myschema);
+const Question = mongoose.model('Question', myschema);
 
-export default model;
+export {Question};
