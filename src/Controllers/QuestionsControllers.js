@@ -1,7 +1,8 @@
 import { Question } from "../Models/QuestionsModel.js";
 
-//First controller for the 
-const GetGame1Questions = async (req, res)=>{
+//First controller for the questions model
+//get all the questions
+const GetAllQuestions = async (req, res)=>{
     try{
         const results = await Question.find();
         res.json(results);
@@ -12,6 +13,29 @@ const GetGame1Questions = async (req, res)=>{
     }
 }
 
+//get just 10 random unique questions
+const GetGame1Questions = async (req, res)=>{
+    const count = await Question.count();
+    let array1 = [];
+    let counter = 1;
+
+    while(counter <= 10){
+        let result = await Question.findOne().skip(Math.floor(Math.random() * count));
+        let flag = array1.map(element=>(element.id == result.id));
+
+        if (!flag.includes(true)){
+            array1.push(result);
+            counter++;
+        }
+        else{
+            console.log('repeat');
+        }
+    }
+
+    res.json(array1);
+}
+
+//add a new question
 const PostQuestions = async (req, res)=>{
     const newquestion = new Question({
         'text': req.body.text,
@@ -25,7 +49,8 @@ const PostQuestions = async (req, res)=>{
 
 const QuestionsControllers = {
     'GetGame1': GetGame1Questions,
-    'PostGame1': PostQuestions ,
+    'PostGame1': PostQuestions,
+    'GetAll': GetAllQuestions
 }
 
 export {QuestionsControllers};
