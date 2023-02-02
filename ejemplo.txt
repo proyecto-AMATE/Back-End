@@ -1,0 +1,17 @@
+ {
+	  "text": "Los Derechos Humanos son",
+    "category": "Derechos humanos",
+	  "answers":[{
+			"text":"Son condiciones instrumentales que permiten la realización de las personas.",
+			"correct":true
+		},
+		{"text":"Son una serie de documentos internacionales firmados por los Estados",
+			"correct":false
+		},
+		{"text":"Son una serie de documentos internacionales firmados por los Estados",
+			"correct":false
+		},
+		{"text":"Son beneficios que tienen las personas por ser humanos",
+			"correct":false}],
+    "clue": "1"
+  }

@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+//import { CategorySchema } from './CategoryModel';
 
 //Creating a new schema for the Questions model
 //defining the different atributes
@@ -8,14 +9,28 @@ const myschema = new Schema({
         'type': String,
         'required': true
     },
-    'category':{
-        'type': String,
-        'required': true
+    'category': {
+        'type': Schema.Types.ObjectId,
+        'ref': 'Category'
     },
     'clue':{
         'type':String,
         'required':true
-    }
+    },
+    'level':{
+        'type':String,
+        'required':true
+    },
+    'answers':[{
+        'text':{
+            'type':String,
+            'requeired':true
+        },
+        'correct':{
+            'type':Boolean,
+            'requeired':true
+        }
+    }]
 });
 
 //Creating the model based on the questions schema
