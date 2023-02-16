@@ -1,17 +1,903 @@
- {
-	  "text": "Los Derechos Humanos son",
-    "category": "Derechos humanos",
-	  "answers":[{
-			"text":"Son condiciones instrumentales que permiten la realización de las personas.",
-			"correct":true
-		},
-		{"text":"Son una serie de documentos internacionales firmados por los Estados",
-			"correct":false
-		},
-		{"text":"Son una serie de documentos internacionales firmados por los Estados",
-			"correct":false
-		},
-		{"text":"Son beneficios que tienen las personas por ser humanos",
-			"correct":false}],
-    "clue": "1"
+[
+  {
+    "text": "¿Cuál es el lugar más frío de la tierra?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "1",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "Antartida",
+        "correct": true,
+         5670be845448149989214"
+      },
+      {
+        "text": "Rusia",
+        "correct": false,
+         5670be845448149989215"
+      },
+      {
+        "text": "Canada",
+        "correct": false,
+         5670be845448149989216"
+      }
+    ],
+  },
+  {
+    "text": "¿Quién escribió La Odisea?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "2",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "Homero",
+        "correct": true,
+         5697f8c4e1d45565bc335"
+      },
+      {
+        "text": "Aristoteles",
+        "correct": false,
+         5697f8c4e1d45565bc336"
+      },
+      {
+        "text": "Platon",
+        "correct": false,
+         5697f8c4e1d45565bc337"
+      }
+    ],   
+  },
+  {
+    "text": "¿Cómo se llama la capital de Mongolia?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "3",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "Ulan Bator",
+        "correct": true,
+         569838c4e1d45565bc33a"
+      },
+      {
+        "text": "Afganistan",
+        "correct": false,
+         569838c4e1d45565bc33b"
+      },
+      {
+        "text": "Nepal",
+        "correct": false,
+         569838c4e1d45565bc33c"
+      }
+    ],    
+  },
+  {
+    "text": "¿Cuál es el río más largo del mundo?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "4",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "Amazonas",
+        "correct": true,
+         569878c4e1d45565bc33f"
+      },
+      {
+        "text": "Lempa",
+        "correct": false,
+         569878c4e1d45565bc340"
+      },
+      {
+        "text": "Nilo",
+        "correct": false,
+         569878c4e1d45565bc341"
+      }
+    ],    
+  },
+  {
+    "text": "¿Cómo se llama la Reina del Reino Unido?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "5",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "Isabel II",
+        "correct": true,
+         5698a8c4e1d45565bc344"
+      },
+      {
+        "text": "Isabel I",
+        "correct": false,
+         5698a8c4e1d45565bc345"
+      },
+      {
+        "text": "Isabel III",
+        "correct": false,
+         5698a8c4e1d45565bc346"
+      }
+    ],
+  },
+  {
+    "text": "¿En qué continente está Ecuador?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "6",
+    "level": "Easy",
+    "answers": [
+      {
+        "text": "America",
+        "correct": true,
+         5698d8c4e1d45565bc349"
+      },
+      {
+        "text": "Africa",
+        "correct": false,
+         5698d8c4e1d45565bc34a"
+      },
+      {
+        "text": "Asia",
+        "correct": false,
+         5698d8c4e1d45565bc34b"
+      }
+    ],
+     
+  },
+
+  {
+    "text": "¿Qué tipo de animal es la ballena?,
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "1",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "Mamifero",
+        "correct": true,
+         5a965d4a6e499ec4ce88d"
+      },
+      {
+        "text": "Pez",
+        "correct": false,
+         5a965d4a6e499ec4ce88e"
+      },
+      {
+        "text": "Anfibio",
+        "correct": false,
+         5a965d4a6e499ec4ce88f"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿De qué colores es la bandera de México?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "2",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "Verde, Blanco y Rojo",
+        "correct": true,
+         5a96fd4a6e499ec4ce892"
+      },
+      {
+        "text": "Amarillo, Azul y Negro",
+        "correct": false,
+         5a96fd4a6e499ec4ce893"
+      },
+      {
+        "text": "Morado, Blanco y Verde",
+        "correct": false,
+         5a96fd4a6e499ec4ce894"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Qué cantidad de huesos en el cuerpo humano?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "3",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "206",
+        "correct": true,
+         5a973d4a6e499ec4ce897"
+      },
+      {
+        "text": "240",
+        "correct": false,
+         5a973d4a6e499ec4ce898"
+      },
+      {
+        "text": "304",
+        "correct": false,
+         5a973d4a6e499ec4ce899"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuándo acabó la II Guerra Mundial?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "4",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "1945",
+        "correct": true,
+         5a977d4a6e499ec4ce89c"
+      },
+      {
+        "text": "1946",
+        "correct": false,
+         5a977d4a6e499ec4ce89d"
+      },
+      {
+        "text": "1947",
+        "correct": false,
+         5a977d4a6e499ec4ce89e"
+      }
+    ],
+  },
+  {
+    "text": "¿En qué país se encuentra la torre de Pisa?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "5",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "Italia",
+        "correct": true,
+         5a97bd4a6e499ec4ce8a1"
+      },
+      {
+        "text": "Alemania",
+        "correct": false,
+         5a97bd4a6e499ec4ce8a2"
+      },
+      {
+        "text": "Francia",
+        "correct": false,
+         5a97bd4a6e499ec4ce8a3"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuál es el océano más grande?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "6",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "Pacifico",
+        "correct": true,
+         5a97fd4a6e499ec4ce8a6"
+      },
+      {
+        "text": "Atlantico",
+        "correct": false,
+         5a97fd4a6e499ec4ce8a7"
+      },
+      {
+        "text": "Indico",
+        "correct": false,
+         5a97fd4a6e499ec4ce8a8"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Qué año llegó Cristóbal Colón a América?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "7",
+    "level": "Normal",
+    "answers": [
+      {
+        "text": "1492",
+        "correct": true,
+         5a984d4a6e499ec4ce8ab"
+      },
+      {
+        "text": "1844",
+        "correct": false,
+         5a984d4a6e499ec4ce8ac"
+      },
+      {
+        "text": "1482",
+        "correct": false,
+         5a984d4a6e499ec4ce8ad"
+      }
+    ],
+     
+  },
+  {
+    "text": "Hola",
+    "category": "¿Quién es el famoso Rey de Rock en los Estados Unidos?",
+    "clue": "1",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "Elvis Presley",
+        "correct": true,
+         5abf4ba89251f764ded8d"
+      },
+      {
+        "text": "Freddy mercury",
+        "correct": false,
+         5abf4ba89251f764ded8e"
+      },
+      {
+        "text": "Michael Jackson",
+        "correct": false,
+         5abf4ba89251f764ded8f"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuál es el país más grande del mundo?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "2",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "Rusia",
+        "correct": true,
+         5abffba89251f764ded92"
+      },
+      {
+        "text": "Estados Unidos",
+        "correct": false,
+         5abffba89251f764ded93"
+      },
+      {
+        "text": "China",
+        "correct": false,
+         5abffba89251f764ded94"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Dónde se encuentra la famosa Torre Eiffel?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "3",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "Francia",
+        "correct": true,
+         5ac03ba89251f764ded97"
+      },
+      {
+        "text": "Italia",
+        "correct": false,
+         5ac03ba89251f764ded98"
+      },
+      {
+        "text": "Inglaterra",
+        "correct": false,
+         5ac03ba89251f764ded99"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿En qué año comenzó la II Guerra Mundial?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "4",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "1939",
+        "correct": true,
+         5ac07ba89251f764ded9c"
+      },
+      {
+        "text": "1940",
+        "correct": false,
+         5ac07ba89251f764ded9d"
+      },
+      {
+        "text": "1920",
+        "correct": false,
+         5ac07ba89251f764ded9e"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuál es tercer planeta en el sistema solar?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "5",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "Tierra",
+        "correct": true,
+         5ac0bba89251f764deda1"
+      },
+      {
+        "text": "Marte",
+        "correct": false,
+         5ac0bba89251f764deda2"
+      },
+      {
+        "text": "Venus",
+        "correct": false,
+         5ac0bba89251f764deda3"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cual es país más poblado de la Tierra?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "6",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "China",
+        "correct": true,
+         5ac0eba89251f764deda6"
+      },
+      {
+        "text": "Estados Unidos",
+        "correct": false,
+         5ac0eba89251f764deda7"
+      },
+      {
+        "text": "India",
+        "correct": false,
+         5ac0eba89251f764deda8"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Qué rama de la Biología estudia los animales?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "7",
+    "level": "Medium",
+    "answers": [
+      {
+        "text": "Zoologia",
+        "correct": true,
+         5ac12ba89251f764dedab"
+      },
+      {
+        "text": "Biologia",
+        "correct": false,
+         5ac12ba89251f764dedac"
+      },
+      {
+        "text": "Fisica",
+        "correct": false,
+         5ac12ba89251f764dedad"
+      }
+    ],
+     
+  },
+
+  {
+    "text": "¿Cuántas patas tiene la araña?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "1",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "8",
+        "correct": true,
+         5ac53ba89251f764dedbf"
+      },
+      {
+        "text": "6",
+        "correct": false,
+         5ac53ba89251f764dedc0"
+      },
+      {
+        "text": "4",
+        "correct": false,
+         5ac53ba89251f764dedc1"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuál es la ciudad de los rascacielos?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "2",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "New York",
+        "correct": true,
+         5ac57ba89251f764dedc4"
+      },
+      {
+        "text": "Beijing",
+        "correct": false,
+         5ac57ba89251f764dedc5"
+      },
+      {
+        "text": "Dubai",
+        "correct": false,
+         5ac57ba89251f764dedc6"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿En qué país se encuentra el famoso monumento Taj Mahal?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "3",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "India",
+        "correct": true,
+         5ac5bba89251f764dedc9"
+      },
+      {
+        "text": "China",
+        "correct": false,
+         5ac5bba89251f764dedca"
+      },
+      {
+        "text": "Thailandia",
+        "correct": false,
+         5ac5bba89251f764dedcb"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Quién era el general de los nazis en la Segunda Guerra Mundial?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "4",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "Hitler",
+        "correct": true,
+         5ac5eba89251f764dedce"
+      },
+      {
+        "text": "Mussolini",
+        "correct": false,
+         5ac5eba89251f764dedcf"
+      },
+      {
+        "text": "Stalin",
+        "correct": false,
+         5ac5eba89251f764dedd0"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Cuál fue el primer metal que empleó el hombre?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "5",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "cobre",
+        "correct": true,
+         5ac61ba89251f764dedd3"
+      },
+      {
+        "text": "oro",
+        "correct": false,
+         5ac61ba89251f764dedd4"
+      },
+      {
+        "text": "plata",
+        "correct": false,
+         5ac61ba89251f764dedd5"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿Quién ganó el mundial de 2014?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "6",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "Alemania",
+        "correct": true,
+         5ac65ba89251f764dedd8"
+      },
+      {
+        "text": "Brasil",
+        "correct": false,
+         5ac65ba89251f764dedd9"
+      },
+      {
+        "text": "Argentina",
+        "correct": false,
+         5ac65ba89251f764dedda"
+      }
+    ],
+     
+  },
+  {
+    "text": "¿De qué está recubierto el cuerpo de los peces?",
+    "category": "63d4b48837253279bb450b1b",
+    "clue": "7",
+    "level": "Hard",
+    "answers": [
+      {
+        "text": "Escamas",
+        "correct": true,
+         5ac68ba89251f764deddd"
+      },
+      {
+        "text": "Algas",
+        "correct": false,
+         5ac68ba89251f764dedde"
+      },
+      {
+        "text": "Plumas",
+        "correct": false,
+         5ac68ba89251f764deddf"
+      }
+    ],
+     
   }
+  ]
+
+
+
+
+[
+  {
+      "text": "Los Derechos Humanos son",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "1",
+      "level": "Easy",
+      "answers": [
+        {
+          "text": "Son condiciones instrumentales que permiten la realización de las personas.",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Son una serie de documentos internacionales firmados por los Estados",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Son beneficios que tienen las personas por ser humanos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+
+  {
+      "text": "La Declaración Universal de los Derechos Humanos es el:",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "2",
+      "level": "Easy",
+      "answers": [
+        {
+          "text": "Documento que recoge los derechos que se deberían garantizar a todas las personas",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Ley internacional vinculante sobre los derechos y las obligaciones de los seres humanos",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Documento que establece las obligaciones de todas las personas",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "La Declaración Universal de Derechos Humanos se firmó el",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "1",
+      "level": "Normal",
+      "answers": [
+        {
+          "text": "10 de diciembre 1948",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "10 de diciembre 1945",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "10 de noviembre de 1948",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "¿Quiénes están obligados a garantizar los derechos humanos?",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "2",
+      "level": "Normal",
+      "answers": [
+        {
+          "text": "Gobiernos, funcionarios del Estado",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Todas las personas",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "ONG´S, empresas privadas",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "Los Derechos Humanos se clasifican en dos grandes grupos",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "1",
+      "level": "Medium",
+      "answers": [
+        {
+          "text": "Civiles y Políticos, Derechos Económicos, Sociales y Culturales",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Primarios y Secundarios",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Integrales y fundamentales",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "La siguiente NO es una característica de los derechos humanos",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "2",
+      "level": "Medium",
+      "answers": [
+        {
+          "text": "Renunciables",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "inalienables",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Intrínsecos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "Todas las personas tenemos",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "3",
+      "level": "Medium",
+      "answers": [
+        {
+          "text": "Renunciables",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "inalienables",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Intrínsecos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "¿Cuál es el papel de las ONG´s en el tema de Derechos Humanos?",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "1",
+      "level": "Hard",
+      "answers": [
+        {
+          "text": "Son responsables de exigir y construir ciudadanía",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Son las responsables de garantizar que se cumplan",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Son sujetas de derechos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+  {
+      "text": "La siguiente es una institución del sistema Nacional de Derechos Humanos",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "2",
+      "level": "Hard",
+      "answers": [
+        {
+          "text": "Todas las anteriores",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Fiscalía General de la República",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Procuraduría General de la República",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        },
+        {
+          "text": "Procuraduría para la Defensa de los Derechos Humanos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+   {
+      "text": "¿Qué puedes hacer si consideras que se te está vulnerando un derecho humano?",
+      "category": "63d4b48837253279bb450b1b",
+      "clue": "3",
+      "level": "Hard",
+      "answers": [
+        {
+          "text": "Todas",
+          "correct": true,
+          5ac68ba89251f764deddd"
+        },
+        {
+          "text": "Organizarse con otras personas en la misma situación",
+          "correct": false,
+          5ac68ba89251f764dedde"
+        },
+        {
+          "text": "Denunciarlo en los espacios pertinentes",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        },
+        {
+          "text": "Señalar a los responsables y exigir que garanticen los derechos",
+          "correct": false,
+          5ac68ba89251f764deddf"
+        }
+      ],
+      
+  },
+]

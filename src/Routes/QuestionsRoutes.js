@@ -38,6 +38,7 @@ QuestionRoutes.post('/postQuestion', (req, res)=>{
 //First delete endpoint of the question model
 //this endpoint delete 
 QuestionRoutes.delete('/deleteQuestion', (req,res)=>{
+    QuestionsControllers.Delete(req, res);
 })
 
 export {QuestionRoutes};
