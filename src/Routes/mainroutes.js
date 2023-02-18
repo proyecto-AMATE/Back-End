@@ -6,6 +6,7 @@ import { CategoriesRoutes } from "./CategoriesRoutes.js";
 function Routes(app){
     
     //Route to the questions module
+    //añadir /v1
     app.use('/questions', QuestionRoutes );
     app.use('/categories', CategoriesRoutes);
 
