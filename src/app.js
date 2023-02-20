@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import {Routes} from './Routes/mainroutes.js';
 import cors from 'cors';
 import helmet from 'helmet';
+import {morganMiddleware } from "./Logger/index.js";
 
 //Creating the server
 const app = express();
@@ -12,6 +13,9 @@ app.use(helmet());
 
 //cors middleware
 app.use(cors());
+
+//morgan middleware
+app.use(morganMiddleware);
     
 //Middleware to convert the data to Json formate
 app.use(bodyParser.json());

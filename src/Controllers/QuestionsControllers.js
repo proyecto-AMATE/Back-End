@@ -1,14 +1,15 @@
 import { Question } from "../Models/QuestionsModel.js";
 import { Category } from "../Models/CategoryModel.js";
+import { DevelopingLogger } from "../Logger/index.js";
 
 //get all the questions
-const GetAllQuestions = async (req, res)=>{
+const Get = async (req, res)=>{
     try{
         const results = await Question.find();
         res.json(results);
     }
     catch(error){
-        
+        DevelopingLogger.error(error);
         res.json(error);
     }
 }
@@ -25,16 +26,7 @@ const GetGame1 = async (req, res)=>{
     let results = [];
     let counter = 1;
 
-    console.log(counteasy);
-    console.log(countnormal);
-    console.log(countmedium);
-    console.log(counthard);
-
     if(counteasy<2 || countnormal<2 || countmedium<3 || counthard<3){
-        console.log(counteasy);
-        console.log(countnormal);
-        console.log(countmedium);
-        console.log(counthard);
         return(res.json('not enought questions on the database'));
     }
 
@@ -43,7 +35,6 @@ const GetGame1 = async (req, res)=>{
         
         let flag = results.map(element=>(element.question == resulteasy.text));
 
-        console.log(flag);
         if (!flag.includes(true)){
             let newanswers = resulteasy.answers.map((element)=>({'id': resulteasy.answers.indexOf(element), 'answer': element.text})).sort(() => {return (Math.random()-0.5)});
             let elementtrue = resulteasy.answers.filter((element)=>(element.correct == true))[0];
@@ -58,7 +49,7 @@ const GetGame1 = async (req, res)=>{
             counter++;
         }
         else{
-            console.log('repeat');
+            DevelopingLogger.debug('repeat easy');
         }
     };
     counter = 1;
@@ -67,7 +58,6 @@ const GetGame1 = async (req, res)=>{
         
         let flag = results.map(element=>(element.question == resultnormal.text));
 
-        console.log(flag);
         if (!flag.includes(true)){
             let newanswers = resultnormal.answers.map((element)=>({'id': resultnormal.answers.indexOf(element), 'answer': element.text})).sort(() => {return (Math.random()-0.5)});
             let elementtrue = resultnormal.answers.filter((element)=>(element.correct == true))[0];
@@ -82,7 +72,7 @@ const GetGame1 = async (req, res)=>{
             counter++;
         }
         else{
-            console.log('repeat');
+            DevelopingLogger.debug('repeat normal');
         }
     };
     counter = 1;
@@ -91,7 +81,6 @@ const GetGame1 = async (req, res)=>{
         
         let flag = results.map(element=>(element.question == resultmedium.text));
 
-        console.log(flag);
         if (!flag.includes(true)){
             let newanswers = resultmedium.answers.map((element)=>({'id': resultmedium.answers.indexOf(element), 'answer': element.text})).sort(() => {return (Math.random()-0.5)});
             let elementtrue = resultmedium.answers.filter((element)=>(element.correct == true))[0];
@@ -106,7 +95,7 @@ const GetGame1 = async (req, res)=>{
             counter++;
         }
         else{
-            console.log('repeat');
+            DevelopingLogger.debug('repeat medium');
         }
     };
     counter = 1;
@@ -116,7 +105,6 @@ const GetGame1 = async (req, res)=>{
         let flag = results.map(element=>(element.question == resulthard.text));
         
 
-        console.log(flag);
         if (!flag.includes(true)){
             let newanswers = resulthard.answers.map((element)=>({'id': resulthard.answers.indexOf(element), 'answer': element.text})).sort(() => {return (Math.random()-0.5)});
             let elementtrue = resulthard.answers.filter((element)=>(element.correct == true))[0];
@@ -131,10 +119,10 @@ const GetGame1 = async (req, res)=>{
             counter++;
         }
         else{
-            console.log('repeat');
+            DevelopingLogger.debug('repeat hard')
         }
     }
-
+    
     res.json(results);
 }
 
@@ -152,7 +140,6 @@ const GetGame1 = async (req, res)=>{
 
 //add a new question
 const PostQuestions = async (req, res)=>{
-    console.log(req.body.length);
     for(let i = 0; i<=req.body.length -1; i++){
         console.log(i);
     const newquestion = new Question({
@@ -179,7 +166,7 @@ const QuestionsControllers = {
     'Delete': DeleteAllQuestions,
     //'GetGame2': GetGame2,
     'PostGame1': PostQuestions,
-    'GetAll': GetAllQuestions
+    'Get': Get
 }
 
 export {QuestionsControllers};

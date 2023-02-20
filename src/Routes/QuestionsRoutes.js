@@ -7,8 +7,8 @@ const QuestionRoutes = express.Router();
 
 //First get endpoint of the questions model
 //this endpoint returns all the questions available on the database
-QuestionRoutes.get('/getAll', (req, res)=>{
-    QuestionsControllers.GetAll(req, res);
+QuestionRoutes.get('/', (req, res)=>{
+    QuestionsControllers.Get(req, res);
 })
 
 //Second get endpoint of the questions model
