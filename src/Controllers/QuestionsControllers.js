@@ -1,21 +1,20 @@
 import { Question } from "../Models/QuestionsModel.js";
 import { Category } from "../Models/CategoryModel.js";
 import { DevelopingLogger } from "../Logger/index.js";
+import Boom  from "@hapi/boom";
 
 //get all the questions
-const Get = async (req, res)=>{
-    try{
-        const results = await Question.find();
-        res.json(results);
+const Get = async (req)=>{
+    const results = await Question.find();
+    if(results.length == 0){
+        throw Boom.notFound('There are not questions on the database');
     }
-    catch(error){
-        DevelopingLogger.error(error);
-        res.json(error);
-    }
+    //res.json(results);
+    return results;
 }
 
 //get just 10 random unique questions agrupated by level and category
-const GetGame1 = async (req, res)=>{
+const GetGame1 = async (req)=>{
     const categoryid = await Category.find({'name': "Category 1"}).select("id");
 
     const counteasy = await Question.count({'level': 'Easy', 'category': categoryid});
@@ -27,7 +26,7 @@ const GetGame1 = async (req, res)=>{
     let counter = 1;
 
     if(counteasy<2 || countnormal<2 || countmedium<3 || counthard<3){
-        return(res.json('not enought questions on the database'));
+        throw Boom.notFound('not enought questions on the database');
     }
 
     while(counter <= 2){
@@ -119,11 +118,12 @@ const GetGame1 = async (req, res)=>{
             counter++;
         }
         else{
-            DevelopingLogger.debug('repeat hard')
+            DevelopingLogger.debug('repeat hard');
         }
     }
     
-    res.json(results);
+    //res.json(results);
+    return (results);
 }
 
 //get just 10 random unique questions agrupated by level and category

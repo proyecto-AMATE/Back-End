@@ -9,4 +9,6 @@ connect(`mongodb+srv://${ev.name}:${ev.password}@proyectoamate.wmubqsd.mongodb.n
 //Initializing the server in the port 3000
 app.listen(3000);
 
+//./../../../../Downloads/ngrok/ngrok http 3000
+
 DevelopingLogger.info('Server running on port 3000');
