@@ -1,5 +1,5 @@
 import express from "express";
-import {Category} from "../Models/CategoryModel.js";
+import {Category} from "../models/category.model.js";
 
 //get all the categories on the database
 const GetAllCategories = async (req, res)=>{
@@ -15,7 +15,7 @@ const PostCategory = async (req, res)=>{
     });
     
     const result = await newcategory.save();
-    res.json(result);
+    return(result);
 }
 
 const CategoriesControllers = {

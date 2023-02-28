@@ -4,7 +4,7 @@ import {Routes} from './Routes/mainroutes.js';
 import cors from 'cors';
 import helmet from 'helmet';
 import {morganMiddleware } from "./Logger/index.js";
-import errorhandler from "./Middleware/errorhandler.js";
+import errorhandler from "./middleware/error.handler.js";
 
 //Creating the server
 const app = express();

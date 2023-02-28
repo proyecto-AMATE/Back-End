@@ -1,6 +1,8 @@
 import express from 'express';
-import { QuestionsControllers} from '../Controllers/QuestionsControllers.js';
-import { DevelopingLogger } from '../Logger/index.js';
+import { QuestionsControllers} from '../controllers/questions.controllers.js';
+import { DevelopingLogger } from '../logger/index.js';
+import { game1, getquestiongame1} from '../dot/questions.dot.js';
+import { validationhandler } from '../middleware/validation.handler.js';
 
 //Creating the router that we will use to create all the endpoints
 //for the Questions entity
@@ -23,7 +25,9 @@ QuestionRoutes.get('/', async (req, res, next)=>{
 
  //First post endpoint of the question model
  //this endpoint save on the data base the questions
- QuestionRoutes.post('/postQuestion', (req, res, next)=>{
+ QuestionRoutes.post('/postQuestion',
+ validationhandler(game1.post , 'body'),
+ (req, res, next)=>{
     try{
         const questions = QuestionsControllers.PostGame1(req);
         res.json(questions);
@@ -32,6 +36,19 @@ QuestionRoutes.get('/', async (req, res, next)=>{
         /*DevelopingLogger.error(err.message);
         res.status(500).json(err.message);*/
         next(err);
+    }
+    
+});
+
+/*This endpoint delete a determinated question based in an id*/
+QuestionRoutes.delete('/deleteByIdQuestion', validationhandler(getquestiongame1,'body'), (req,res, next)=>{
+    try{
+        QuestionsControllers.DeleteById(req, res);
+    }
+    catch(err){
+        DevelopingLogger.error(err.message);
+        res.status(500).json(err.message);
+        //next(err)
     }
     
 })

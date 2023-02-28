@@ -1,6 +1,6 @@
-import { Question } from "../Models/QuestionsModel.js";
-import { Category } from "../Models/CategoryModel.js";
-import { DevelopingLogger } from "../Logger/index.js";
+import { Question } from "../models/questions.model.js";
+import { Category } from "../models/category.model.js";
+import { DevelopingLogger } from "../logger/index.js";
 import Boom  from "@hapi/boom";
 
 //get all the questions
@@ -152,18 +152,25 @@ const PostQuestions = async (req, res)=>{
     
         await newquestion.save();
     }
-    res.json('completed');
+    return('completed');
 }
 
 const DeleteAllQuestions = async (req, res)=>{
     let result = await Question.remove({});
     res.json(result);
-    
+   
+}
+
+const DeleteQuestionById = async (req, res)=>{
+    DevelopingLogger.debug(req);
+    let result = await Question.remove({'_id':req.header.id});
+    res.json(result);
 }
 
 const QuestionsControllers = {
     'GetGame1': GetGame1,
     'Delete': DeleteAllQuestions,
+    'DeleteById': DeleteQuestionById,
     //'GetGame2': GetGame2,
     'PostGame1': PostQuestions,
     'Get': Get
