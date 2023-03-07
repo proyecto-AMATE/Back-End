@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from 'body-parser';
-import {Routes} from './Routes/mainroutes.js';
+import {Routes} from './routes/index.js';
 import cors from 'cors';
 import helmet from 'helmet';
 import {morganMiddleware } from "./Logger/index.js";
@@ -21,14 +21,14 @@ app.use(morganMiddleware);
 //Middleware to convert the data to Json formate
 app.use(bodyParser.json());
 
-
 //Creating the routes to each components
 Routes(app);
+
+//Error handler middleware
+app.use(errorhandler);
 
 //cabeceras de seguridad, logger, express validator o joi, error handler, manejar 404
 //sustituir console log por una libreria de log
 
-//Error handler middleware
-app.use(errorhandler);
 
 export {app};

@@ -4,7 +4,8 @@ const id = joi.string().id();
 const text = joi.string();
 const category = joi.string().id();
 const clue = joi.string();
-const level = joi.string();
+const level = joi.string().regex(/(^Easy)|(^Normal)|(^Medium)|(^Hard)$/);
+const language = joi.string().regex(/(^English)|(^Español)$/);
 
 const answer = joi.object({
     text: joi.string(),
@@ -15,6 +16,10 @@ const answer = joi.object({
 const getquestiongame1 = joi.object({
     id: id
 })
+
+const updatequestiongame1 = joi.object({
+    id:joi.array().items(id)
+}) 
 
 const questiongame1 = joi.object({
 
@@ -41,6 +46,10 @@ const questiongame1 = joi.object({
         post: (questiongame1) => questiongame1.required(),
         //delete: (questiongame1) => questiongame1.forbidden(),
         update: (questiongame1) => questiongame1.optional()
+    }),
+    language: language.alter({
+        post: (questiongame1)=> questiongame1.required(),
+        update: (questiongame1)=> questiongame1.optional()
     }),
     answers: joi.array().items(answer).alter({
         //get: (questiongame1)=> questiongame1.required(),
@@ -104,4 +113,4 @@ const game1 = {
     'update': updatequestiongame1array
 }
 
-export {game1, getquestiongame1};
+export {game1, getquestiongame1, updatequestiongame1};

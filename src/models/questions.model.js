@@ -21,6 +21,10 @@ const myschema = new Schema({
         'type':String,
         'required':true
     },
+    'language':{
+        'type':String,
+        'requeired': true
+    },
     'answers':[{
         'text':{
             'type':String,
